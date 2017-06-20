@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="flag.pdf">
+   sodipodi:docname="flag.svg">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -65,7 +65,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.16"
-     inkscape:cx="-1398.9188"
+     inkscape:cx="-2992.6688"
      inkscape:cy="2669.2678"
      inkscape:document-units="px"
      inkscape:current-layer="g9076"
@@ -98,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3517,7 +3517,7 @@
            sodipodi:role="line"
            x="-19672.42"
            y="-635.8941"
-           id="tspan5593">    just lock it</tspan></text>
+           id="tspan5593">      just lokkit</tspan></text>
       <path
          inkscape:export-ydpi="300"
          inkscape:export-xdpi="300"
