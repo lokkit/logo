@@ -1,5 +1,9 @@
-# logo
-Contains the lokkit logo
+# Lokkit Logo
+Contains the lokkit logo and poster etc.
+
+# Lokkit Colors
+![Colors used by Lokkit](color_definition.svg.png)
+
 
 # Build images in different sizes
 The file `build.sh` converts the specified svg files to several formats and sizes. The converted files
