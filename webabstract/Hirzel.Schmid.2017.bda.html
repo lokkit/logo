@@ -3,8 +3,8 @@
 	<head>
         <!--<meta http-equiv="refresh" content="0; url=https://lokkit.io/" />-->
     	<title>Anwendung von Blockchain im Internet of Things</title>
-        <!-- Don't change this stylesheet. If you need more styles 
-             you have to define them here in the header or in a 
+        <!-- Don't change this stylesheet. If you need more styles
+             you have to define them here in the header or in a
              sepparte file -->
         <link rel="stylesheet" href="bda.styles.css" type="text/css" />
         <link rel="stylesheet" href="lokkit.css" type="text/css" />
@@ -28,7 +28,7 @@
       <source src="music.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
-    
+
     	<!-- There are three possible styles banner-left, banner-right -->
 		<div>
 			<img class="banner-left" src="lokkit_logo.svg" width="30%"/>
@@ -50,19 +50,22 @@
             <p>Prof. Dr. Hüsler René</p>
         </div>
     <p>
-    Blockchain. Kryptowährungen. Dezentralisierte Datenbank. Internet of Things.Was sich für Laien anhört wie ein Auszug aus dem Computerduden, lässt die Herzen von so manchem Informatikstudenten höher schlagen. Bei diesen Begriffen handelt es sich nicht nur um Ausdrücke zur Geltendmachung der mentalen Überlegenheit durch Kenntnis von Fachbegriffen. Betont werden vor allem die rasant wachsende Anzahl vernetzter Geräte, die zunehmende Verteilung von Computersystemen, die immer grösser werdende Frage der Sicherheit derselben und die zunehmende Unlust von Unternehmen einander in der heutigen globalisierten Welt zu vertrauen.
+    Blockchain. Kryptowährungen. Dezentralisierte Datenbank. Internet of Things. Was sich für Laien anhört wie ein Auszug aus dem Computerduden, lässt die Herzen von so manchem Informatikstudenten höher schlagen. Bei diesen Begriffen handelt es sich nicht nur um Ausdrücke zur Geltendmachung der mentalen Überlegenheit durch Kenntnis von Fachbegriffen. Betont werden vor allem die rasant wachsende Anzahl vernetzter Geräte, die zunehmende Verteilung von Computersystemen, die immer grösser werdende Frage der Sicherheit derselben und die zunehmende Unlust von Unternehmen einander in der heutigen globalisierten Welt zu vertrauen.
     </p>
     <p>
-    Einzig die Schlagworte Blockchain und Internet of Things (IoT) sowie der Bau eines Demonstrators waren vom Auftraggeber am Kick-Off Meeting vorgegeben worden. Im Rahmen dieser Bachelorarbeit sollte ein System definiert, konzipiert und entwickelt werden, das den Blockchain und IoT Aspekt verbindet und einen praktischen Anwendungszweck demonstriert. Der entwickelte Demonstrator sollte nach Abschluss dieses Projektes noch weiter vom Auftraggeber als solcher verwendet werden können. 
+    Einzig die Schlagworte Blockchain und Internet of Things (IoT) sowie der Bau eines Demonstrators waren vom Auftraggeber am Kick-Off Meeting vorgegeben worden. Im Rahmen dieser Bachelorarbeit sollte ein System definiert, konzipiert und entwickelt werden, das den Blockchain und IoT Aspekt verbindet und einen praktischen Anwendungszweck demonstriert. Der entwickelte Demonstrator sollte nach Abschluss dieses Projektes noch weiter vom Auftraggeber als solcher verwendet werden können.
     </p>
 
     <h2>Aufgabenstellung</h2>
     <div class="light">Die folgende Aufgabenstellung wurde ebenfalls im Rahmen dieser Projektarbeit definiert.</div>
     Es soll ein System entwickelt werden, um Schliessfächer zu (ver-)mieten. Dabei sollen die Verträge in Form von Smart Contracts in einer privaten Ethereum Blockchain definiert werden. Ein Benutzer soll über eine grafische Benutzeroberfläche ein freies Schliessfach reservieren können. Während der Benutzer der aktuelle Mieter eines Faches ist, kann er das Schloss per Knopfdruck ver- und entriegeln. Die Kommunikation soll über die Etheruem Blockchain stattfinden und unter Berücksichtigung gängiger kryptographischer Standards gegen missbräuchliche Verwendung gesichert werden.
-    
+
     <h2>Ergebnisse</h2>
-    Das System wurde basierend auf Smart Contracts in einer Ethereum Blockchain implementiert. Um diese anzusprechen wurden eine Webapp entwickelt, die eine Ethereum Node benötigt, um Daten aus diesen Smart Contracts benötigt. Um diese Webapp auf mobilen Geräten zu verwenden, wurde eine Android App entiwckelt, die eine solche Node auf dem Gerät startet und mit dem Netzwerk verbindet. Auf Laptops und Desktop Computern kann die Referenzimplementation des Ethereum Protokolls verwendet werden.
-        
+    Das System wurde basierend auf Smart Contracts in einer privaten Ethereum Blockchain implementiert. Als Benutzeroberfläche wurde eine Webapp entwickelt die auf einen Node der Blockchain verbindet und so mit dem Smart Contract intereagieren kann.
+    Um diese Webapp auf mobilen Geräten zu verwenden, wurde eine Android App entiwckelt, die eine Node auf dem Gerät startet und mit dem Netzwerk verbindet.
+    <b>TODO: Wir haben Demonstrator gebaut aus metall....</b>
+
+
     <h2>Lösungskonzept</h2>
     Um die Interaktionsmölichkeiten des Systems für einen Benutzer möglichst einfach zu halten, wird auf Mobile Geräte gesetzt. Über die darauf verfügbaren Kameras kann ein QR-Code eingelesen werden, der ein Schliessfach als Smart Contract widerspiegelt. Wenn das Schliessfach gemietet ist, kann der Benutzer damit in Echtzeit interagieren. Somit ist kein Fachwissen bezüglich Blockchain notwendig, um diese zu verwenden.
     <br />
@@ -82,20 +85,20 @@
     </div>
     <br />
     <br />
-    Die Detailansicht des obig erwähnten "System lokkit" folg hier. Dabei werden die technischen Komponenten und deren Schnittstellen dargestellt.
+    Die Detailansicht des obig erwähnten "System lokkit" folgt hier. Dabei werden die technischen Komponenten und deren Schnittstellen dargestellt.
     <br />
     <br />
     <div>
         <img src="Aufbau.png" width="35%" />
     </div>
     <br />
-    
-    
+
+
     <h2>Aufgetretene Probleme</h2>
 	Die Entwicklung an der Ethereum Platform ist noch in vollem Gange. Einige konzeptionelle, sowie implementationsbezogene Fehler befinden sich noch in Bearbeitung. Die technische Dokumentation ist aus diesem Grund ebenfalls im Rückstand und viele schriftlich festgehaltene Informationen sind nicht aktuell.
 	<br />
 	Viele Hindernisse im Bereich Blockchain - gerade aufgrund der Transparenz und Dezentralisierung - verlangen eine andere Herangehensweise. Die Lösungsentwicklung für die Ethereum Plattform setzt voraus, dass die beteiligten sich mit dieser auseinandersetzen und sich auf sie einlassen. Es ist auch ein gewisses Feingefühl im Entwurf von Schnittstellen und eigenen Protokollen vorauszusetzen, da diese gegen missbräuchliche Verwendung zusätzlich abgesichert werden müssen.
-    
+
     <h2>Ausblick</h2>
 	Die Blockchain Technologien sind erst am Anfang ihrer Geschichte. Viele Firmen suchen aktiv nach Anwendungsgebieten, die die Verwendung einer Blockchain rechtfertigen. Der entiwckelte Demonstrator ist ein guter Grundstein, auf den aufgebaut werden könnte. Das Konzept könnte verfeinert und an Firmen demonstriert werden, um das noch vorhandene Mysterium um diese Smart Contracts in der Blockchain zu lüften.
 	<br />
