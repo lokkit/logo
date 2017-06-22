@@ -1,0 +1,113 @@
+/* ======================================== */
+/*
+The first part of the defined styles contains
+only the standard html-tags.
+In the second part are the style classes.
+*/
+/* ======================================== */
+
+@charset "utf-8";
+
+/* ======================================== */
+/* HTML tags                                */
+/* ======================================== */
+body{
+	margin:0px;
+	padding:0px;	
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:1.2em;
+}
+/* Headings ------------------------------- */
+h1{
+	clear:both;
+	line-height: 1.2em;
+}
+h2{
+	line-height: 1.2em;
+
+}
+h3{
+	line-height: 1.2em;
+
+}
+h4{
+	line-height: 1.2em;
+
+}
+/* All pictures dont have a border -------- */
+img{
+	border:none;
+}
+/* Code snipplets ------------------------- */
+code{
+	font-size:11px;
+}
+
+/* ======================================== */
+/* Style classes                            */
+/* ======================================== */
+/* Logo, banner, title picture ------------ */
+.banner-left{
+ 	border:none;
+	vertical-align:middle;
+	text-align:left;
+	clear:both;
+}
+.banner-right{
+ 	border:none;
+	vertical-align:middle;
+	float:right;
+	clear:both;
+}
+/* Kurzinfo ----------------------------- */
+.box{
+	float:right;
+	padding:0px 10px 10px 10px;
+	margin: 0px 10px;
+	background:#F5F5F5;
+	border: solid thin #E1E1E1;
+	clear:right;
+}
+.box h3{
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;	
+	background:#CCC;
+	margin:0px -10px 0px -10px;
+	padding-top:4px;
+	padding-left:8px;
+	padding-right:0px;
+	padding-bottom:4px;	
+}
+.box h4{
+	margin: 8px 0px;
+	padding:0px;
+}
+.box p{
+	margin:0px;
+	padding:0px;	
+}
+/* pic-left ------------------------------- */
+.pic-left{
+	float:left;	
+	margin-right:10px;
+}
+/* pic-right ------------------------------ */
+.pic-right{
+    float:right;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+/* Console entries ------------------------ */
+.console{
+	font-family:"Courier New", Courier, monospace;
+	border:#e1e1e1;
+	background:#EEE;
+	color:#666;
+	margin-left:20px;
+	margin-right:10px;
+	padding:4px;
+}
