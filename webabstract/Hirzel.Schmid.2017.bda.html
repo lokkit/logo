@@ -7,7 +7,6 @@
              you have to define them here in the header or in a
              sepparte file -->
         <link rel="stylesheet" href="bda.styles.css" type="text/css" />
-        <link rel="stylesheet" href="lokkit.css" type="text/css" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- put your own styles here: -->
         <style type="text/css">
@@ -25,17 +24,42 @@
               }
               .image {
                 max-width: 800px;
-                min-width:400px;
-                width: 100%;
+                min-width:100px;
+                //width: 100%;
               }
+			  .light{
+					font-style:italic;
+					color: gray;
+					-webkit-margin-before: 0.83em;
+					-webkit-margin-after: 0.83em;
+					-webkit-margin-start: 0px;
+					-webkit-margin-end: 0px;
+				}
+
+				.box{
+					float:right;
+					padding:0px 10px 10px 10px;
+					margin: 0px 10px;
+					background:white;
+					border: solid thin #E1E1E1;
+					clear:right;
+				}
+				.box h3{
+					font-size:14px;
+					font-weight:bold;
+					color:#F9BF02;
+					background:white;
+					margin:0px -10px 0px -10px;
+					border-bottom: solid thin #E1E1E1;
+					padding-top:4px;
+					padding-left:8px;
+					padding-right:0px;
+					padding-bottom:4px;	
+				}
+
         </style>
     </head>
 	<body>
-    <audio controls  hidden="hidden">
-      <source src="music.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-
     	<!-- There are three possible styles banner-left, banner-right -->
 		<div>
 			<img class="banner-left" src="lokkit_logo.svg" width="30%"/>
@@ -68,13 +92,12 @@
     Es soll ein System entwickelt werden, um Schliessfächer zu (ver-)mieten. Dabei sollen die Verträge in Form von Smart Contracts in einer privaten Ethereum Blockchain definiert werden. Ein Benutzer soll über eine grafische Benutzeroberfläche ein freies Schliessfach reservieren können. Während der Benutzer der aktuelle Mieter eines Faches ist, kann er das Schloss per Knopfdruck ver- und entriegeln. Die Kommunikation soll über die Etheruem Blockchain stattfinden und unter Berücksichtigung gängiger kryptographischer Standards gegen missbräuchliche Verwendung gesichert werden.
 
     <h2>Ergebnisse</h2>
-    Das System wurde basierend auf Smart Contracts in einer privaten Ethereum Blockchain implementiert. Als Benutzeroberfläche wurde eine Webapp entwickelt die auf einen Node der Blockchain verbindet und so mit dem Smart Contract intereagieren kann.
-    Um diese Webapp auf mobilen Geräten zu verwenden, wurde eine Android App entiwckelt, die eine Node auf dem Gerät startet und mit dem Netzwerk verbindet.
-    <b>TODO: Wir haben Demonstrator gebaut aus metall....</b>
-
+    Das System wurde basierend auf Smart Contracts in einer privaten Ethereum Blockchain implementiert. Als Benutzeroberfläche wurde eine Webapp entwickelt die auf einen Node der Blockchain verbindet und so mit dem Smart Contract intereagieren kann. Um diese Webapp auf mobilen Geräten zu verwenden, wurde eine Android App entiwckelt, die eine Node auf dem Gerät startet und mit dem Netzwerk verbindet. Der Demonstrator besteht aus metallischen Schliessfächern, deren Schliessmechanismen durch IoT Geräte implementiert und eingebaut wurden.
 
     <h2>Lösungskonzept</h2>
     Um die Interaktionsmölichkeiten des Systems für einen Benutzer möglichst einfach zu halten, wird auf Mobile Geräte gesetzt. Über die darauf verfügbaren Kameras kann ein QR-Code eingelesen werden, der ein Schliessfach als Smart Contract widerspiegelt. Wenn das Schliessfach gemietet ist, kann der Benutzer damit in Echtzeit interagieren. Somit ist kein Fachwissen bezüglich Blockchain notwendig, um diese zu verwenden.
+
+	
     <br />
 	<br />
     <div class="wrapper">
@@ -92,15 +115,21 @@
     </div>
     <br />
     <br />
-    Die Detailansicht des obig erwähnten "System lokkit" folgt hier. Dabei werden die technischen Komponenten und deren Schnittstellen dargestellt.
+    Die Detailansicht des obig erwähnten <i>System lokkit</i> folgt hier. Dabei werden die technischen Komponenten und deren Schnittstellen dargestellt.
     <br />
     <br />
     <div class="wrapper">
         <img src="Aufbau.png" class="image" />
     </div>
     <br />
-
-
+		
+    <h3>Smart Contracts</h3>
+	“A computerized transaction protocol that executes the terms of a contract.”, The Blockchain Revolution
+	<br /><br />
+	Mit diesem Zitat kann grob das Ziel von Smart Contracts beschrieben werden. Dies sind Verträge, die in einem maschinenlesbaren Format verfasst sind und können unmissverständlich und ohne Interpretationsspielraum deterministisch definiert werden. So ist es möglich, einen in jedem Fall vorhersehbaren digitalen Vertrag aufzusetzen.
+	<br /><br />
+	Die <a href="https://github.com/lokkit/contract" target="parent">Smart Contracts<a/> wurden so aufgesetzt, dass jegliche Objekte als mietbar in der Blockchain abgelegt werden können. Diese Abstraktion ermöglich die Verwendung dieser Implementation für weitere Anwendungsszenarien.
+	
     <h2>Aufgetretene Probleme</h2>
 	Die Entwicklung an der Ethereum Platform ist noch in vollem Gange. Einige konzeptionelle, sowie implementationsbezogene Fehler befinden sich noch in Bearbeitung. Die technische Dokumentation ist aus diesem Grund ebenfalls im Rückstand und viele schriftlich festgehaltene Informationen sind nicht aktuell.
 	<br />
