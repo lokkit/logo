@@ -30,8 +30,10 @@
     </audio>
     
     	<!-- There are three possible styles banner-left, banner-right -->
-        <img class="banner-left" src="lokkit_logo.svg" width="50%"/>
-        <img class="banner-right" src="lokkit_icon.svg" width="20%"/>
+		<div>
+			<img class="banner-left" src="lokkit_logo.svg" width="30%"/>
+			<img class="banner-right" src="lokkit_icon.svg" width="15%"/>
+		</div>
         <h1>Lokkit - Einsatz von Blockchain und IoT</h1>
 
         <!-- Box with person info -->
@@ -56,40 +58,47 @@
 
     <h2>Aufgabenstellung</h2>
     <div class="light">Die folgende Aufgabenstellung wurde ebenfalls im Rahmen dieser Projektarbeit definiert.</div>
-    Es soll ein System entwickelt werden, um Schliessfächer zu (ver-)mieten. Dabei sollen die Verträge in Form von Smart Contracts in einer privaten Ethereum Blockchain definiert werden. Ein Benutzer soll über eine grafische Benutzeroberfläche ein freies Schliessfach reservieren können. Während der Benutzer der aktuelle Mieter eines Faches ist, kann er das Schloss per Knopfdruck ver- und entriegeln.
+    Es soll ein System entwickelt werden, um Schliessfächer zu (ver-)mieten. Dabei sollen die Verträge in Form von Smart Contracts in einer privaten Ethereum Blockchain definiert werden. Ein Benutzer soll über eine grafische Benutzeroberfläche ein freies Schliessfach reservieren können. Während der Benutzer der aktuelle Mieter eines Faches ist, kann er das Schloss per Knopfdruck ver- und entriegeln. Die Kommunikation soll über die Etheruem Blockchain stattfinden und unter Berücksichtigung gängiger kryptographischer Standards gegen missbräuchliche Verwendung gesichert werden.
     
     <h2>Ergebnisse</h2>
-    Das System wurde basierend auf Smart Contracts in einer Ethereum Blockchain implementiert. Um diese anzusprechen wurden eine Webapp entwickelt, die eine Ethereum Node benötigt, um Daten aus diesen Smart Contracts benötigt. Um diese Webapp auf mobilen Geräten zu verwenden, wurde eine Android App entiwckelt, die eine solche Node auf dem Gerät startet und mit dem Netzwerk verbindet.
+    Das System wurde basierend auf Smart Contracts in einer Ethereum Blockchain implementiert. Um diese anzusprechen wurden eine Webapp entwickelt, die eine Ethereum Node benötigt, um Daten aus diesen Smart Contracts benötigt. Um diese Webapp auf mobilen Geräten zu verwenden, wurde eine Android App entiwckelt, die eine solche Node auf dem Gerät startet und mit dem Netzwerk verbindet. Auf Laptops und Desktop Computern kann die Referenzimplementation des Ethereum Protokolls verwendet werden.
         
     <h2>Lösungskonzept</h2>
-    Um die Interaktionsmölichkeiten des Systems für einen Benutzer möglichst einfach zu halten, wird stark auf Mobile Geräte gesetzt. Über die darauf verfügbare Kamera kann ein QR-Code eingelesen werden, der ein Schliessfach als Smart Contract widerspiegelt. Wenn das Schliessfach gemietet ist, kann der Benutzer damit in Echtzeit interagieren.
-    </br >
+    Um die Interaktionsmölichkeiten des Systems für einen Benutzer möglichst einfach zu halten, wird auf Mobile Geräte gesetzt. Über die darauf verfügbaren Kameras kann ein QR-Code eingelesen werden, der ein Schliessfach als Smart Contract widerspiegelt. Wenn das Schliessfach gemietet ist, kann der Benutzer damit in Echtzeit interagieren. Somit ist kein Fachwissen bezüglich Blockchain notwendig, um diese zu verwenden.
+    <br />
+	<br />
     <div>
-        <img src="Konzept.png" width="40%" />
+        <img src="Mobile_Konzept.png" width="35%" />
     </div>
-    
-    </br >
-    </br >
-    Folgend wird illustriert, wie ein Benutzer mit dem System interagieren kann. Um die Komplexität zu verringern, wird das gesamte erarbeitete System als "System lokkit" aufgelistet.
-    </br >
+    <br />
+    <br />
+    Folgend wird illustriert, wie ein Benutzer mit dem System interagieren kann. Um die Komplexität zu verringern, wird das gesamte erarbeitete System als <i>System lokkit</i> dargestellt. Die technische Unterteilung ist weiter unten in Form eines Komponentendiagramms ersichtlich.
+    <br />
+	Ein wichtiger Bestandteil des Systems ist die losgelöste Blockchain (unten). Diese wird als primäre Datenhaltung verwendet und beinhaltet auch die Smart Contracts zur Interaktion mit den IoT Geräten.
+    <br />
+    <br />
     <div>
-        <img src="Kontext_Diagram.PNG" width="40%" />
+        <img src="Kontext_Diagram.PNG" width="35%"/>
     </div>
-    
-    </br >
-    </br >
+    <br />
+    <br />
     Die Detailansicht des obig erwähnten "System lokkit" folg hier. Dabei werden die technischen Komponenten und deren Schnittstellen dargestellt.
+    <br />
+    <br />
     <div>
-        <img src="Aufbau.png" width="40%" />
+        <img src="Aufbau.png" width="35%" />
     </div>
-    </br >
+    <br />
     
     
     <h2>Aufgetretene Probleme</h2>
+	Die Entwicklung an der Ethereum Platform ist noch in vollem Gange. Einige konzeptionelle, sowie implementationsbezogene Fehler befinden sich noch in Bearbeitung. Die technische Dokumentation ist aus diesem Grund ebenfalls im Rückstand und viele schriftlich festgehaltene Informationen sind nicht aktuell.
+	<br />
+	Viele Hindernisse im Bereich Blockchain - gerade aufgrund der Transparenz und Dezentralisierung - verlangen eine andere Herangehensweise. Die Lösungsentwicklung für die Ethereum Plattform setzt voraus, dass die beteiligten sich mit dieser auseinandersetzen und sich auf sie einlassen. Es ist auch ein gewisses Feingefühl im Entwurf von Schnittstellen und eigenen Protokollen vorauszusetzen, da diese gegen missbräuchliche Verwendung zusätzlich abgesichert werden müssen.
     
     <h2>Ausblick</h2>
-    Aufbauend auf diesem Demonstrator, dieser Arbeit und den Erkenntnissen daraus, könnte vom Auftraggeber Nutzen gezogen werden. Die weitere Verfolgung dieses Konzeptes könnte, unter Beachtung der weiteren Überlegungen im Bereich der Smart Contracts, verfeinert werden, und an Firmen demonstriert werden, um das noch vorhandene Mysterium um diese Smart Contracts in der Blockchain zu lüften.
-    
+	Die Blockchain Technologien sind erst am Anfang ihrer Geschichte. Viele Firmen suchen aktiv nach Anwendungsgebieten, die die Verwendung einer Blockchain rechtfertigen. Der entiwckelte Demonstrator ist ein guter Grundstein, auf den aufgebaut werden könnte. Das Konzept könnte verfeinert und an Firmen demonstriert werden, um das noch vorhandene Mysterium um diese Smart Contracts in der Blockchain zu lüften.
+	<br />
 	</body>
 </html>
 
